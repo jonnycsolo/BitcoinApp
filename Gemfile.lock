@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/hiravgandhi/angularjs-rails.git
+  revision: 11ed20a34b896ef7ba48f4aaa9d176dac34c66ff
+  branch: master
+  specs:
+    angularjs-rails (1.2.14)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -116,6 +123,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angularjs-rails!
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails

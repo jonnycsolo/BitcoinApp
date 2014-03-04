@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 #Bootstrap
 gem "twitter-bootstrap-rails"
 
+# Angular
+gem 'angularjs-rails', github: 'hiravgandhi/angularjs-rails', branch: 'master'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
