@@ -1,0 +1,10 @@
+<input type="search" placeholder="Filter by title" ng-model="searchTerm">
+
+<ul class="movies">
+  <li ng-repeat="movie in movies | filter:{title: searchTerm}">
+    <a href="#/movie/{{ movie.id }}" ng-click="addToQueue($event, movie.id)">
+      <img ng-src="http://placekitten.com/g/{{ 200 + movie.id }}/300">
+      <h2>{{ movie.title }}</h2>
+    </a>
+  </li>
+</ul>

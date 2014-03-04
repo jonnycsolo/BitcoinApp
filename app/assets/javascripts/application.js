@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require angular
+//= require_self
 //= require_tree .
+
+/* Module */
+var catflix = angular.module('catflix', []);
+
+/* Config */
+catflix.config(['$httpProvider', function($httpProvider) {
+  $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
+}]);
