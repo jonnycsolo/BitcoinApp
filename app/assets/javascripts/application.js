@@ -17,9 +17,9 @@
 //= require_tree .
 
 /* Module */
-var catflix = angular.module('catflix', []);
+var wheelsApp = angular.module('wheelsApp', []);
 
 /* Config */
-catflix.config(['$httpProvider', function($httpProvider) {
+wheelsApp.config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
 }]);
