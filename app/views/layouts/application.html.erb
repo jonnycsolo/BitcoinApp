@@ -17,5 +17,7 @@
     var PRODUCTS = <%= @products.to_json.html_safe %>;
   </script>
   <%= javascript_include_tag "application" %>
+
+ <button ng-click="sayHello()">Hello</button>
 </body>
 </html>

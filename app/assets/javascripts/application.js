@@ -19,6 +19,8 @@
 /* Module */
 var wheelsApp = angular.module('wheelsApp', []);
 
+
+
 /* Config */
 wheelsApp.config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
