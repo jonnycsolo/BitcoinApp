@@ -14,12 +14,12 @@
 ActiveRecord::Schema.define(version: 20140306051541) do
 
   create_table "products", force: true do |t|
-    t.string   "image"
     t.string   "name"
     t.text     "desc"
     t.integer  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image"
   end
 
 end
