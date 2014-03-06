@@ -6,11 +6,11 @@
 </div>
 <div>
 	<ul class="products">
-	  <li ng-repeat="product in products | filter:{desc: searchTerm}" class="product-listing">
+	  <li ng-repeat="product in products | filter:{name: searchTerm}" class="product-listing">
 	      <img ng-src="http://gzcwheels.com/api/images/{{ product.image }}" class="product-image">
 	      
 		      <h3>{{ product.name }}</h3>
-		      <p>{{ product.desc }}</p>
+		      <p> {{ product.desc }}</p>
 		      <h4>{{ product.price | currency }}</h4>
 	   
 	    </a>
