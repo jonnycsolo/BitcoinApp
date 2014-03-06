@@ -9,3 +9,10 @@ Product.destroy_all
 
 Product.create(name: "Chrome 18 inch 5x114.3 FWD", desc: "Brand New Rims, set of 4, new tires would go great with this.", price: "599.99")
 Product.create(name: "245/40/18 New Tires", desc: "Brand New Tires, set of 4, new rims would go great with this.", price: "499.99")
+Product.create(name: "Chrome 18 inch 5x114.3 FWD", desc: "Brand New Rims, set of 4, new tires would go great with this.", price: "599.99")
+Product.create(name: "245/40/18 New Tires", desc: "Brand New Tires, set of 4, new rims would go great with this.", price: "499.99")
+Product.create(name: "Chrome 18 inch 5x114.3 FWD", desc: "Brand New Rims, set of 4, new tires would go great with this.", price: "599.99")
+Product.create(name: "245/40/18 New Tires", desc: "Brand New Tires, set of 4, new rims would go great with this.", price: "499.99")
+Product.create(name: "Chrome 18 inch 5x114.3 FWD", desc: "Brand New Rims, set of 4, new tires would go great with this.", price: "599.99")
+Product.create(name: "245/40/18 New Tires", desc: "Brand New Tires, set of 4, new rims would go great with this.", price: "499.99")
+Product.create(name: "Chrome 18 inch 5x114.3 FWD", desc: "Brand New Rims, set of 4, new tires would go great with this.", price: "599.99")
