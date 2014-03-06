@@ -1,7 +1,7 @@
 
 
 <input type="search" placeholder="Filter Products" ng-model="searchTerm">
-<div class="right-sidebar">
+<div class="left-sidebar">
 
 </div>
 <div>
@@ -11,7 +11,7 @@
 	      
 		      <h3>{{ product.name }}</h3>
 		      <p>{{ product.desc }}</p>
-		      <h4>$  {{ product.price }}</h4>
+		      <h4>{{ product.price | currency }}</h4>
 	   
 	    </a>
 	  </li>

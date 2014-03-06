@@ -18,14 +18,25 @@
 	 .product-image{
 	 	border: 5px dashed red;
 	 	position: relative;
+	 	width: 100%;
+	 	height: 50%;
 	 }
+
+	 p{
+	 	vertical-align: middle;
+	 	position: relative;
+	 	display: inline-block;
+	 	border: 3px solid white;
+	 }
+
 }
 
-.right-sidebar{
+.left-sidebar{
 	width: 100px;
 	height: 2000px;
 	background: grey;
 	float: left;
 	position: relative;
+	border-radius: 5px;
 	
 }
