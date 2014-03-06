@@ -3,11 +3,11 @@
 <ul class="movies">
   <li ng-repeat="product in products | filter:{desc: searchTerm}" class="product-listing">
       <img ng-src="http://fillmurray.com/g/{{ 200 + product.id }}/300" class="product-image">
-      <div>
+      
 	      <h3>{{ product.name }}</h3>
 	      <p>{{ product.desc }}</p>
 	      <h4>$  {{ product.price }}</h4>
-      </div>
+   
     </a>
   </li>
 </ul>
