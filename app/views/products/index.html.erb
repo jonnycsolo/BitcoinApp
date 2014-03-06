@@ -1,13 +1,20 @@
-<input type="search" placeholder="Filter Products" ng-model="searchTerm">
 
-<ul class="movies">
-  <li ng-repeat="product in products | filter:{desc: searchTerm}" class="product-listing">
-      <img ng-src="http://fillmurray.com/g/{{ 200 + product.id }}/300" class="product-image">
-      
-	      <h3>{{ product.name }}</h3>
-	      <p>{{ product.desc }}</p>
-	      <h4>$  {{ product.price }}</h4>
-   
-    </a>
-  </li>
-</ul>
+
+<input type="search" placeholder="Filter Products" ng-model="searchTerm">
+<div class="right-sidebar">
+
+</div>
+<div>
+	<ul class="movies">
+	  <li ng-repeat="product in products | filter:{desc: searchTerm}" class="product-listing">
+	      <img ng-src="http://gzcwheels.com/api/images/FOR_F-305_BMF_.jpg" class="product-image">
+	      <!-- <img ng-src="http://fillmurray.com/g/{{ 200 + product.id }}/300" class="product-image"> -->
+	      
+		      <h3>{{ product.name }}</h3>
+		      <p>{{ product.desc }}</p>
+		      <h4>$  {{ product.price }}</h4>
+	   
+	    </a>
+	  </li>
+	</ul>
+</div>
