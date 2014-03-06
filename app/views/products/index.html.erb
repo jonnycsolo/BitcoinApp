@@ -1,9 +1,10 @@
 <input type="search" placeholder="Filter Products" ng-model="searchTerm">
 
 <ul class="movies">
-  <li ng-repeat="product in products | filter:{desc: searchTerm}">
-      <img ng-src="http://placekitten.com/g/{{ 200 + product.id }}/300">
+  <li ng-repeat="product in products | filter:{desc: searchTerm}" class="product-listing">
+      <img ng-src="http://fillmurray.com/g/{{ 200 + product.id }}/300">
       <h2>{{ product.name }}</h2>
+      <h2>$  {{ product.price }}</h2>
     </a>
   </li>
 </ul>
