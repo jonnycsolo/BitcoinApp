@@ -1,0 +1,15 @@
+<input type="search" placeholder="Filter Products" ng-model="searchTerm">
+<div class="left-sidebar">
+
+</div>
+
+<div>
+	<ul class="products">
+	  <li ng-repeat="product in products | filter: {name: searchTerm}" class="product-listing">
+	    <a href="#/product/{{ product.id }}" ng-click="addToQueue($event, product.id)">
+	      <img ng-src="http://placekitten.com/g/{{ 200 + movie.id }}/300">
+	      <h2>{{ product.name }}</h2>
+	    </a>
+	  </li>
+	</ul>
+</div>
