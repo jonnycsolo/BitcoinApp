@@ -1,24 +1,12 @@
-// /*
-//  The animate class is apart of the element and the ng-enter class
-//  is attached to the element once the enter animation event is triggered
-// */
-// .reveal.ng-enter {
-//  -webkit-transition: 1s linear all; /* Safari/Chrome */
-//  transition: 1s linear all; /* All other modern browsers and IE10+ */
- 
-//  /* The animation preparation code */
-//  opacity: 0;
-// }
- 
-// /*
-//  Keep in mind that you want to combine both CSS
-//  classes together to avoid any CSS-specificity
-//  conflicts
-// */
-// .reveal.ng-enter.ng-enter-active {
-//  /* The animation code itself */
-//  opacity: 1;
-// }
+.left-sidebar{
+	width: 150px;
+	height: 500px;
+	background: grey;
+	display: inline-block;
+	position: absolute;
+	border-radius: 5px;
+	
+}
 
 .reveal.ng-enter, 
 .reveal.ng-leave
@@ -43,15 +31,14 @@
 .product-listing {
 	 display: inline-block;
 	 position: relative;
-	 margin: 5px 5px ;
+	 margin: 5px 15px;
 	 border: 3px solid green;
 	 width: 25%;
 	 height: 500px;
 	 text-align: center;
 	 vertical-align: middle;
 	 top: 0px;
-	 left: 0px;
-	 clear: both;
+	 left: 130px;
 
 
 	 .product-image{
@@ -73,12 +60,3 @@
 	 }
 }
 
-.left-sidebar{
-	width: 100px;
-	height: 2000px;
-	background: grey;
-	float: left;
-	position: relative;
-	border-radius: 5px;
-	
-}
