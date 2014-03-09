@@ -1,6 +1,25 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+ The animate class is apart of the element and the ng-enter class
+ is attached to the element once the enter animation event is triggered
+*/
+.reveal.ng-enter {
+ -webkit-transition: 1s linear all; /* Safari/Chrome */
+ transition: 1s linear all; /* All other modern browsers and IE10+ */
+ 
+ /* The animation preparation code */
+ opacity: 0;
+}
+ 
+/*
+ Keep in mind that you want to combine both CSS
+ classes together to avoid any CSS-specificity
+ conflicts
+*/
+.reveal.ng-enter.ng-enter-active {
+ /* The animation code itself */
+ opacity: 1;
+}
+
 
 .product-listing {
 	 display: inline-block;
@@ -14,6 +33,7 @@
 	 top: 0px;
 	 left: 0px;
 	 clear: both;
+
 
 	 .product-image{
 	 	border: 5px dashed red;
@@ -32,7 +52,6 @@
 	 h3 {
 	 	height: 36px;
 	 }
-
 }
 
 .left-sidebar{

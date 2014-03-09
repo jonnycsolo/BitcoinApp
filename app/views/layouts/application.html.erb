@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html ng-app="wheelsApp">
 <head>
+
   <title>Rims and Tires</title>
   <%= stylesheet_link_tag "application", media: "all" %>
   <%= csrf_meta_tags %>
 </head>
 <body ng-controller="CatalogCtrl">
   <header>
-    <%= link_to image_tag('logo.png'), root_path, class: 'logo' %>
-    <a href="#" class="queue">My List</a>
+    <%= link_to image_tag('wheelstires.png'), root_path, class: 'logo' %>
   </header>
   
   <%= yield %>
@@ -18,6 +18,5 @@
   </script>
   <%= javascript_include_tag "application" %>
 
- <button ng-click="sayHello()">Hello</button>
 </body>
 </html>

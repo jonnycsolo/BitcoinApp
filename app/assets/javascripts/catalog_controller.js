@@ -1,4 +1,4 @@
-var wheelsApp = angular.module('wheelsApp', []);
+var wheelsApp = angular.module('wheelsApp', ['ngAnimate']);
 
 wheelsApp.controller('CatalogCtrl', ['$scope', '$http', function($scope, $http) {
   $scope.searchTerm = "";

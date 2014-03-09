@@ -13,11 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular
+//= require angular-animate
 //= require_self
 //= require_tree .
 
 /* Module */
-var wheelsApp = angular.module('wheelsApp', []);
+var wheelsApp = angular.module('wheelsApp', ['ngAnimate']);
 
 /* Config */
 wheelsApp.config(['$httpProvider', function($httpProvider) {
