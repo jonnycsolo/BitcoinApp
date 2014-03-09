@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="wheelsApp">
+<html data-ng-app="wheelsApp">
 <head>
 
   <title>Rims and Tires</title>
   <%= stylesheet_link_tag "application", media: "all" %>
   <%= csrf_meta_tags %>
 </head>
-<body ng-controller="CatalogCtrl">
+<body data-ng-controller="CatalogCtrl">
   <header>
     <%= link_to image_tag('wheelstires.png'), root_path, class: 'logo' %>
   </header>
