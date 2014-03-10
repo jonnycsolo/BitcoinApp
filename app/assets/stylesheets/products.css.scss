@@ -3,9 +3,9 @@
 	height: 500px;
 	background: grey;
 	display: inline-block;
-	position: absolute;
+	position: relative;
 	border-radius: 5px;
-	
+	display: none;
 }
 
 .reveal.ng-enter, 

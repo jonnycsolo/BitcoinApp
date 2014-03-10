@@ -1,10 +1,12 @@
 
 
 <div style="font-size: 36px; text-align: center;">{{ searchTerm }}</div>
-<div class="left-sidebar">
-<input type="search" placeholder="Filter Products" data-ng-model="searchTerm">
+	<input type="search" placeholder="Filter Products" data-ng-model="searchTerm">
 
+<div class="left-sidebar">
+	<label># of results </label>
 </div>
+
 <div>
 	<ul class="products">
 	  <li data-ng-repeat="product in products | filter:{name: searchTerm}" data-ng-view class="product-listing reveal">
