@@ -2,20 +2,22 @@
 
 <div style="font-size: 36px; text-align: center;">{{ searchTerm }}</div>
 	<input type="search" placeholder="Filter Products" data-ng-model="searchTerm">
-
+list has {{filtered.length}} items
 <div class="left-sidebar">
 	<label># of results </label>
 </div>
 
 <div>
 	<ul class="products">
-	  <li data-ng-repeat="product in products | filter: searchTerm" class="product-listing reveal">
+	  <li data-ng-repeat="product in filtered = ( products | filter: searchTerm | limitTo: 9 )" class="product-listing reveal">
 	      <img data-ng-src="http://gzcwheels.com/api/images/{{ product.image }}" alt="{{ product.name }}" class="product-image">
 	      
 		      <h3>{{ product.name }}</h3>
 		      <p> {{ product.desc }}</p>
 		      <h4>{{ product.price | currency }}</h4>
-	  
+	      <hr>    
+    Filtered list has {{filtered.length}} items
+</div>
 	 
 	  </li>
 	</ul>
