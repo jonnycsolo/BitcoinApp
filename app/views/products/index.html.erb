@@ -9,7 +9,7 @@
 
 <div>
 	<ul class="products">
-	  <li data-ng-repeat="product in products | filter:{name: searchTerm}" class="product-listing reveal">
+	  <li data-ng-repeat="product in products | filter: searchTerm" class="product-listing reveal">
 	      <img data-ng-src="http://gzcwheels.com/api/images/{{ product.image }}" alt="{{ product.name }}" class="product-image">
 	      
 		      <h3>{{ product.name }}</h3>

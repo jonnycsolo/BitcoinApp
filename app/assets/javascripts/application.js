@@ -17,6 +17,9 @@
 //= require_self
 //= require_tree .
 
+// Strict mode changes both syntax and runtime behavior
+'use strict';
+
 /* Module */
 var wheelsApp = angular.module('wheelsApp', ['ngAnimate']);
 
