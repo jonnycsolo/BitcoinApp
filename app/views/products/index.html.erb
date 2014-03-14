@@ -1,8 +1,10 @@
 
 
-<div style="font-size: 36px; text-align: center;">{{ searchTerm }}</div>
-	<input type="search" placeholder="Filter Products" data-ng-model="searchTerm">
-list has {{filtered.length}} items
+<div class="search">
+	<input type="search" placeholder="Search Products" data-ng-model="searchTerm">
+<span class="topHeadline">{{ searchTerm }} has {{filtered.length}} items</span>
+</div>
+
 <div class="left-sidebar">
 	<label># of results </label>
 </div>
@@ -16,10 +18,9 @@ list has {{filtered.length}} items
 		      <p> {{ product.desc }}</p>
 		      <h4>{{ product.price | currency }}</h4>
 	      <hr>    
-    Filtered list has {{filtered.length}} items
+ 
 </div>
 	 
 	  </li>
 	</ul>
 </div>
-
