@@ -16,7 +16,8 @@ def fetch_excel_data
       name = ex.cell(line,'A')
       description = ex.cell(line,'I')
       price = ex.cell(line,'O')
-      @products = Product.create(:name => name,:desc => description,:price => price)
+      image = ex.cell(line,'S')
+      @products = Product.create(name: name, desc: description,price: price, image: image)
   end
 
 end
