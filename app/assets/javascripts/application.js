@@ -24,6 +24,7 @@
 var wheelsApp = angular.module('wheelsApp', ['ngAnimate']);
 
 /* Config */
-wheelsApp.config(['$httpProvider', function($httpProvider) {
+wheelsApp.config(['$httpProvider','$scope', function($httpProvider, $scope) {
   $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
 }]);
+
