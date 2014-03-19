@@ -19,7 +19,7 @@ gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.0.4'
 gem 'jbuilder', '1.0.2'
 
-gem "twitter-bootstrap-rails"
+gem "bootstrap-sass"
 gem 'angularjs-rails', github: 'hiravgandhi/angularjs-rails', branch: 'master'
 
 group :doc do
